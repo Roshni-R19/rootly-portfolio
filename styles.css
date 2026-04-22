@@ -77,12 +77,28 @@ nav {
   background: var(--bark);
 }
 .hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  z-index: 2;
+}
+.hero-text {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding: 80px 64px 72px;
+}
+.hero-image-col {
   position: relative;
-  z-index: 2;
+  overflow: hidden;
+}
+.hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 .hero-eyebrow {
   font-size: 0.78rem;
@@ -264,6 +280,12 @@ strong { color: var(--text); font-weight: 600; }
 }
 /* SVG device mockup rendered inline */
 .device-svg { width: 80%; max-width: 320px; }
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 
 /* ─── MOTIVATION ──────────────────────────────────────── */
 .motivation { background: var(--cream); }
@@ -444,7 +466,8 @@ strong { color: var(--text); font-weight: 600; }
   background: rgba(245,240,232,0.04);
 }
 .insight-icon {
-  font-size: 1.8rem;
+  width: 32px;
+  height: 32px;
   margin-bottom: 20px;
   display: block;
 }
@@ -629,7 +652,7 @@ strong { color: var(--text); font-weight: 600; }
 
 .states-row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 2px;
   background: var(--border);
   margin-top: 56px;
@@ -641,9 +664,10 @@ strong { color: var(--text); font-weight: 600; }
   align-items: center;
   text-align: center;
 }
-.state-card.healthy { background: var(--moss); }
-.state-card.thirsty { background: #C49A3A; }
-.state-card.critical { background: #B84040; }
+.state-card.healthy  { background: #3A5A2E; }
+.state-card.thirsty  { background: #2E5A7A; }
+.state-card.sad      { background: #C4A83A; }
+.state-card.hot      { background: #B84040; }
 .state-dot {
   width: 56px;
   height: 56px;
@@ -651,8 +675,9 @@ strong { color: var(--text); font-weight: 600; }
   margin-bottom: 24px;
 }
 .state-card.healthy .state-dot { background: #A8D18A; box-shadow: 0 0 24px rgba(168,209,138,0.5); }
-.state-card.thirsty .state-dot { background: #F5C842; box-shadow: 0 0 24px rgba(245,200,66,0.5); }
-.state-card.critical .state-dot { background: #F08080; box-shadow: 0 0 24px rgba(240,128,128,0.5); }
+.state-card.thirsty .state-dot { background: #7ABCD6; box-shadow: 0 0 24px rgba(122,188,214,0.5); }
+.state-card.sad     .state-dot { background: #F5D866; box-shadow: 0 0 24px rgba(245,216,102,0.5); }
+.state-card.hot     .state-dot { background: #F08080; box-shadow: 0 0 24px rgba(240,128,128,0.5); }
 .state-label {
   font-family: 'DM Serif Display', serif;
   font-size: 1.2rem;
@@ -880,6 +905,41 @@ strong { color: var(--text); font-weight: 600; }
 .code-comment { color: rgba(122,158,110,0.7); }
 .code-keyword { color: #C4714A; }
 .code-string { color: var(--sage); }
+.arch-diagram-image {
+  width: 100%;
+  object-fit: contain;
+  max-height: 600px;
+  display: block;
+}
+.code-link-card {
+  border: 1px solid rgba(245,240,232,0.12);
+  padding: 40px;
+  margin-top: 40px;
+}
+.code-link-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--sage);
+}
+.code-link-desc {
+  font-size: 0.9rem;
+  color: rgba(245,240,232,0.55);
+  margin: 16px 0 28px;
+}
+.code-link-btn {
+  display: inline-block;
+  border: 1px solid rgba(245,240,232,0.25);
+  padding: 12px 24px;
+  font-size: 0.85rem;
+  color: rgba(245,240,232,0.7);
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s;
+}
+.code-link-btn:hover {
+  border-color: rgba(245,240,232,0.6);
+  color: rgba(245,240,232,1);
+}
 
 /* ─── FOOTER ──────────────────────────────────────────── */
 footer {
@@ -917,7 +977,9 @@ footer {
   nav { padding: 0 24px; }
   .nav-links { display: none; }
   section { padding: 80px 24px; }
-  .hero-inner { padding: 80px 24px 56px; }
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-image-col { display: none; }
+  .hero-text { padding: 80px 24px 56px; }
   .hero-scroll { padding: 20px 24px; }
   .hero-title { font-size: clamp(3.5rem, 12vw, 6rem); }
   .intro-grid,
@@ -929,7 +991,7 @@ footer {
   .reflection-grid,
   .concept-features { grid-template-columns: 1fr; }
   .proto-grid { grid-template-columns: 1fr; }
-  .states-row { grid-template-columns: 1fr; }
+  .states-row { grid-template-columns: 1fr 1fr; }
   .milestone-links { grid-template-columns: 1fr 1fr; }
   .arch-row { flex-direction: column; display: flex; }
   .arch-arrow { transform: rotate(90deg); padding: 12px 0; }

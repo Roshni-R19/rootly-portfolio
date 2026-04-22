@@ -27,22 +27,27 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-inner">
-    <p class="hero-eyebrow">Pervasive Interaction Design · University of Michigan</p>
-    <h1 class="hero-title">Root<em>ly</em></h1>
-    <p class="hero-desc">An ambient plant care companion that helps plants thrive · without adding to your daily cognitive load.</p>
-    <div class="hero-meta">
-      <div class="hero-meta-item">
-        <div class="hero-meta-label">Team</div>
-        <div class="hero-meta-val">Kyle Stocksdale · Jiani Huang · Roshni Raisinghani</div>
+    <div class="hero-text">
+      <p class="hero-eyebrow">Pervasive Interaction Design · University of Michigan</p>
+      <h1 class="hero-title">Root<em>ly</em></h1>
+      <p class="hero-desc">An ambient plant care companion that helps plants thrive, without adding to your daily cognitive load.</p>
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <div class="hero-meta-label">Team</div>
+          <div class="hero-meta-val">Kyle Stocksdale · Jiani Huang · Roshni Raisinghani</div>
+        </div>
+        <div class="hero-meta-item">
+          <div class="hero-meta-label">Course</div>
+          <div class="hero-meta-val">SI 612 Pervasive Interaction Design</div>
+        </div>
+        <div class="hero-meta-item">
+          <div class="hero-meta-label">Year</div>
+          <div class="hero-meta-val">Winter 2026</div>
+        </div>
       </div>
-      <div class="hero-meta-item">
-        <div class="hero-meta-label">Course</div>
-        <div class="hero-meta-val">SI 612 Pervasive Interaction Design</div>
-      </div>
-      <div class="hero-meta-item">
-        <div class="hero-meta-label">Year</div>
-        <div class="hero-meta-val">Winter 2026</div>
-      </div>
+    </div>
+    <div class="hero-image-col">
+      <img src="images/hero.png" class="hero-image" alt="Rootly plant care device in use">
     </div>
   </div>
   <svg class="hero-deco" viewBox="0 0 600 600">
@@ -63,40 +68,17 @@
     <div class="intro-left fade-up">
       <div class="section-eyebrow">Product Introduction</div>
       <h2>An ambient-first IoT system for everyday plant owners</h2>
-      <p>Rootly combines a physical IoT device with a lightweight companion app to help users understand and respond to their plants' needs · at a glance, without interruption.</p>
+      <p>Rootly combines a physical IoT device with a lightweight companion app to help users understand and respond to their plants' needs, at a glance, without interruption.</p>
       <p>A <strong>NeoPixel LED ring</strong> reflects soil moisture through color. A <strong>TFT face display</strong> gives plants an expressive personality. Together they create a system that is ambient by default and escalates only when truly necessary.</p>
-      <p>The companion app provides plant profiles, care history, and actionable guidance on demand · never forcing itself into your day.</p>
+      <p>The companion app provides plant profiles, care history, and actionable guidance on demand, never forcing itself into your day.</p>
     </div>
     <div class="intro-right fade-up">
       <div class="value-prop-box">
         <div class="vp-label">Value Proposition</div>
         <blockquote>"Transforming everyday plant care into simple routines that help plants grow and people feel connected."</blockquote>
       </div>
-      <!-- Inline SVG Product Shot -->
       <div class="product-shot">
-        <svg class="device-svg" viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg">
-          <!-- Device body -->
-          <rect x="80" y="30" width="160" height="180" rx="12" fill="#2C2416" stroke="#3A5A2E" stroke-width="1.5"/>
-          <!-- TFT screen -->
-          <rect x="96" y="46" width="128" height="96" rx="4" fill="#1A1208"/>
-          <!-- Happy face on TFT -->
-          <circle cx="160" cy="90" r="32" fill="#3A5A2E"/>
-          <circle cx="148" cy="84" r="4" fill="#A8D18A"/>
-          <circle cx="172" cy="84" r="4" fill="#A8D18A"/>
-          <path d="M148 100 Q160 112 172 100" stroke="#A8D18A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-          <!-- NeoPixel ring -->
-          <circle cx="160" cy="178" r="22" fill="none" stroke="#1A1208" stroke-width="12"/>
-          <circle cx="160" cy="156" r="3.5" fill="#A8D18A"/>
-          <circle cx="174" cy="160" r="3.5" fill="#7AB86A"/>
-          <circle cx="180" cy="174" r="3.5" fill="#3A5A2E"/>
-          <circle cx="174" cy="188" r="3.5" fill="#3A5A2E"/>
-          <circle cx="160" cy="192" r="3.5" fill="#5A9A4A"/>
-          <circle cx="146" cy="188" r="3.5" fill="#7AB86A"/>
-          <circle cx="140" cy="174" r="3.5" fill="#A8D18A"/>
-          <circle cx="146" cy="160" r="3.5" fill="#A8D18A"/>
-          <!-- Label -->
-          <text x="160" y="225" text-anchor="middle" font-family="DM Sans" font-size="9" fill="#6B6050" letter-spacing="1">ROOTLY DEVICE v1</text>
-        </svg>
+        <img src="images/device.png" alt="Rootly physical device" class="product-image">
       </div>
     </div>
   </div>
@@ -109,7 +91,7 @@
       <div class="section-eyebrow">Motivation</div>
       <h2>Plants don't signal distress loudly. That's the problem.</h2>
       <p>Our initial research surfaced a consistent pattern: people who want to care for their plants often fail not because of disinterest, but because <strong>plant needs are invisible until it's too late.</strong></p>
-      <p>Unlike pets, plants give no audible cues. The result is a cycle of forgetting, guilt, and eventual plant loss. Contextual inquiries confirmed this directly · a graduate student forgot to water plants during exam weeks and felt guilty discovering dry soil. An older participant lost a plant to inconsistent watering during travel.</p>
+      <p>Unlike pets, plants give no audible cues. The result is a cycle of forgetting, guilt, and eventual plant loss. Contextual inquiries confirmed this directly, a graduate student forgot to water plants during exam weeks and felt guilty discovering dry soil. An older participant lost a plant to inconsistent watering during travel.</p>
       <p>We identified four core design goals that shaped every decision:</p>
       <ul class="design-goals">
         <li class="design-goal-item"><span class="design-goal-arrow">→</span> Bridge the gap between users and their plants</li>
@@ -121,11 +103,11 @@
     <div class="stat-stack fade-up">
       <div class="stat-card">
         <div class="stat-number">64%</div>
-        <div class="stat-label">of respondents live with others, yet are the sole plant caregiver · confirming the coordination gap</div>
+        <div class="stat-label">of respondents live with others, yet are the sole plant caregiver, confirming the coordination gap</div>
       </div>
       <div class="stat-card">
         <div class="stat-number">20/30</div>
-        <div class="stat-label">survey respondents cited <em>forgetting</em> as the #1 barrier to plant care · not complexity</div>
+        <div class="stat-label">survey respondents cited <em>forgetting</em> as the #1 barrier to plant care, not complexity</div>
       </div>
       <div class="stat-card">
         <div class="stat-number">71%</div>
@@ -139,7 +121,7 @@
 <section class="formative" id="research">
   <div class="section-eyebrow fade-up">Formative Study &amp; Results</div>
   <div class="fade-up max-720">
-    <h2>Three lenses on the problem</h2>
+    <h2>How we approached the research</h2>
     <p>Our formative research combined contextual inquiry, a designed cultural probe protocol, and a 30-response survey. Together they gave us directional confidence about who struggles with plant care, why, and what kind of system would actually help.</p>
   </div>
   <div class="study-methods fade-up">
@@ -152,7 +134,7 @@
       </svg>
       <div class="method-meta">Contextual Inquiry</div>
       <div class="method-title">Contextual Inquiry</div>
-      <p class="method-desc">Two in-home observational sessions with plant owners established the foundational problem frame · invisible plant needs and unclear shared responsibility cause care failure, not indifference.</p>
+      <p class="method-desc">Two in-home observational sessions with plant owners established the foundational problem frame, invisible plant needs and unclear shared responsibility cause care failure, not indifference.</p>
     </div>
     <div class="method-card">
       <svg class="method-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -164,7 +146,7 @@
       </svg>
       <div class="method-meta">Cultural Probe</div>
       <div class="method-title">Cultural Probe</div>
-      <p class="method-desc">A one-week creative probe kit was fully designed for 5–6 participants: texture rubbings, prompt cards, abstract drawings, and timeline stickers. Due to time constraints, kits were not deployed · but the protocol informed scenario design for M3.</p>
+      <p class="method-desc">A one-week creative probe kit was deployed with 3 long-term plant owners, each with approximately 10 years of experience caring for houseplants. Activities included texture rubbings, prompt cards, abstract drawings, and timeline stickers to surface emotional relationships with plants and lived experiences of care uncertainty.</p>
     </div>
     <div class="method-card">
       <svg class="method-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -175,7 +157,7 @@
       </svg>
       <div class="method-meta">Survey</div>
       <div class="method-title">Survey (n = 30)</div>
-      <p class="method-desc">30 complete responses collected Feb 19–24, 2026 via Google Forms. Validated that forgetting · not coordination complexity · is the primary failure mode, pointing toward ambient glanceable cues over scheduled reminders.</p>
+      <p class="method-desc">30 complete responses collected via Google Forms. Validated that forgetting, not coordination complexity, is the primary failure mode, pointing toward ambient glanceable cues over scheduled reminders.</p>
     </div>
   </div>
 
@@ -199,13 +181,13 @@
       <div class="finding-num">03</div>
       <div class="finding-text">
         <h4>Users want condition-aware alerts, not fixed schedules</h4>
-        <p>Open-ended responses consistently requested soil moisture sensors with threshold-based alerts. Fixed schedules generate false alarms and erode trust · especially for overwatering-sensitive plants.</p>
+        <p>Open-ended responses consistently requested soil moisture sensors with threshold-based alerts. Fixed schedules generate false alarms and erode trust, especially for overwatering-sensitive plants.</p>
       </div>
     </li>
     <li class="finding-item">
       <div class="finding-num">04</div>
       <div class="finding-text">
-        <h4>Emotional stakes are high · design must reassure, not scold</h4>
+        <h4>Emotional stakes are high · design must reassure the caregiver</h4>
         <p>Emotional responses to plants skewed positive (calm: 24, happy: 21), but missed care triggered anxiety (7), guilt (6), and relief when caught up (7). The system's tone must build confidence, not add guilt.</p>
       </div>
     </li>
@@ -217,18 +199,18 @@
   <div class="section-eyebrow fade-up">Experience Prototype &amp; Results</div>
   <div class="fade-up max-680">
     <h2>Speed dating reveals what users actually do · not what they say</h2>
-    <p>In M3 we ran user enactments with 4 participants across 3 scenario contexts (morning routine, soil issue, travel) and 3 system proactiveness levels (low, medium, high), using Slack messages, colored phone screens, and printed cards as low-fi simulations.</p>
+    <p>In an early prototyping stage we ran user enactments with 4 participants across 3 scenario contexts (morning routine, soil issue, travel) and 3 system proactiveness levels (low, medium, high), using Slack messages, colored phone screens, and printed cards as low-fi simulations.</p>
   </div>
   <div class="proto-grid fade-up">
     <div class="proto-card">
       <div class="proto-tag">Finding 01</div>
       <h3>Action is almost always delayed</h3>
-      <p>Participants rarely acted immediately. They settled into routines before responding, or planned to act later. The system must support re-notification and delayed action · not assume immediate response.</p>
+      <p>Participants rarely acted immediately. They settled into routines before responding, or planned to act later. The system must support re-notification and delayed action, not assume immediate response.</p>
     </div>
     <div class="proto-card dark">
       <div class="proto-tag light">Finding 02</div>
       <h3>Users want interpretation, not just alerts</h3>
-      <p>Participants tried to diagnose before acting · searching online, considering multiple causes, asking what to do. A system that only signals a problem does not reduce decision effort.</p>
+      <p>Participants tried to diagnose before acting, searching online, considering multiple causes, asking what to do. A system that only signals a problem does not reduce decision effort.</p>
     </div>
     <div class="proto-card accent">
       <div class="proto-tag light">Finding 03</div>
@@ -238,7 +220,7 @@
     <div class="proto-card">
       <div class="proto-tag sage">Finding 04</div>
       <h3>Users resist automation · they want augmentation</h3>
-      <p>Critically, the travel calendar handoff (auto-messaging a roommate) made participants uncomfortable. Even helpful automation undermined trust. Rootly augments human decision-making; it does not replace it.</p>
+      <p>Critically, the travel calendar handoff (auto-messaging a roommate) made participants uncomfortable. Even helpful automation was difficult to trust. Rootly augments human decision-making; it does not replace it.</p>
     </div>
   </div>
 </section>
@@ -251,37 +233,37 @@
   </div>
   <div class="insights-grid fade-up">
     <div class="insight-card">
-      <span class="insight-icon">🌿</span>
+      <svg class="insight-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 4C16 4 8 14 8 20a8 8 0 0 0 16 0C24 14 16 4 16 4Z" stroke="#7A9E6E" stroke-width="1.5" stroke-linejoin="round"/></svg>
       <h4>Interrupt only when truly urgent</h4>
       <p>Users do not want to be interrupted unless the situation is genuinely critical.</p>
     </div>
     <div class="insight-card">
-      <span class="insight-icon">🔍</span>
+      <svg class="insight-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="14" cy="14" r="8" stroke="#7A9E6E" stroke-width="1.5"/><line x1="20" y1="20" x2="28" y2="28" stroke="#7A9E6E" stroke-width="1.5" stroke-linecap="round"/></svg>
       <h4>Help users understand, not just know</h4>
-      <p>Users want help understanding what the plant needs · not just signals that something is wrong.</p>
+      <p>Users want help understanding what the plant needs, not just signals that something is wrong.</p>
     </div>
     <div class="insight-card">
-      <span class="insight-icon">⏱</span>
+      <svg class="insight-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="12" stroke="#7A9E6E" stroke-width="1.5"/><polyline points="16,8 16,16 22,16" stroke="#7A9E6E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       <h4>Fit into existing routines</h4>
       <p>Users prefer to care for plants on their own terms and within their existing daily patterns.</p>
     </div>
     <div class="insight-card">
-      <span class="insight-icon">🎛</span>
+      <svg class="insight-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="4" y1="10" x2="28" y2="10" stroke="#7A9E6E" stroke-width="1.5" stroke-linecap="round"/><line x1="4" y1="22" x2="28" y2="22" stroke="#7A9E6E" stroke-width="1.5" stroke-linecap="round"/><circle cx="20" cy="10" r="3" stroke="#7A9E6E" stroke-width="1.5"/><circle cx="12" cy="22" r="3" stroke="#7A9E6E" stroke-width="1.5"/></svg>
       <h4>Keep users in control</h4>
       <p>Users want to remain in control rather than hand plant-care decisions over to the system.</p>
     </div>
     <div class="insight-card">
-      <span class="insight-icon">👁</span>
+      <svg class="insight-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 16C4 16 8 8 16 8C24 8 28 16 28 16C28 16 24 24 16 24C8 24 4 16 4 16Z" stroke="#7A9E6E" stroke-width="1.5" stroke-linejoin="round"/><circle cx="16" cy="16" r="4" stroke="#7A9E6E" stroke-width="1.5"/></svg>
       <h4>Low-effort, glanceable feedback</h4>
       <p>Users value ambient feedback that fits naturally into everyday life without demanding attention.</p>
     </div>
     <div class="insight-card">
-      <span class="insight-icon">😟</span>
+      <svg class="insight-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="12" stroke="#7A9E6E" stroke-width="1.5"/><path d="M12 13a4 4 0 0 1 8 0c0 2-2 3-4 4" stroke="#7A9E6E" stroke-width="1.5" stroke-linecap="round"/><circle cx="16" cy="22" r="1" fill="#7A9E6E"/></svg>
       <h4>Reduce uncertainty and anxiety</h4>
       <p>Users experience uncertainty and sometimes anxiety around care, especially when unsure what action is needed.</p>
     </div>
     <div class="insight-card insight-card-wide">
-      <span class="insight-icon">✅</span>
+      <svg class="insight-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="12" stroke="#7A9E6E" stroke-width="1.5"/><polyline points="11,16 14,20 21,12" stroke="#7A9E6E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       <h4>Support awareness and confidence</h4>
       <p>Users respond better to systems that support awareness and confidence than to systems that feel demanding or intrusive. The system should feel like a trusted companion, not a surveillance tool.</p>
     </div>
@@ -293,28 +275,28 @@
   <div class="section-eyebrow fade-up">Final System Concept</div>
   <div class="fade-up max-680">
     <h2>Ambient-first. Expressive. Always in your control.</h2>
-    <p>Rootly is an ambient plant care companion consisting of a physical IoT device and a mobile app, connected through Particle Cloud. The design principle is simple: the physical device communicates plant status continuously and passively. The app provides deeper context on demand. Notifications escalate only when urgency warrants them.</p>
+    <p>Rootly is an ambient plant care companion consisting of a physical IoT device and a mobile app, connected through Particle Cloud. The design principle is simple: the physical device communicates plant status continuously and passively. The app provides deeper context when needed. Notifications escalate only when it is urgent.</p>
   </div>
   <div class="concept-features fade-up">
     <div class="feature-card">
       <div class="feature-num">01</div>
       <div class="feature-body">
         <h3>Ambient Status Display</h3>
-        <p>A NeoPixel LED ring continuously reflects soil moisture · green when healthy, shifting to amber and red as the plant dries. No interaction required. Always glanceable as users move through their home.</p>
+        <p>A NeoPixel LED ring continuously reflects soil moisture, green when healthy, shifting to amber and red as the plant dries. No interaction required. Always glanceable as users move through their home.</p>
       </div>
     </div>
     <div class="feature-card">
       <div class="feature-num">02</div>
       <div class="feature-body">
         <h3>Expressive Plant Personality</h3>
-        <p>A TFT display gives the plant a simple emotional expression · happy, neutral, thirsty · that translates abstract sensor data into something immediately readable. The face creates emotional connection that motivates care.</p>
+        <p>A TFT display gives the plant a simple emotional expression, happy, neutral, thirsty, that translates abstract sensor data into something immediately readable. The face creates emotional connection that motivates care.</p>
       </div>
     </div>
     <div class="feature-card">
       <div class="feature-num">03</div>
       <div class="feature-body">
         <h3>Companion App</h3>
-        <p>The Rootly mobile app lets users view plant profiles, log care activity, and mark a plant as watered. It surfaces care history and plant-specific tips so users build understanding over time · not just react to crises.</p>
+        <p>The Rootly mobile app lets users view plant profiles, log care activity, and mark a plant as watered. It surfaces care history and plant-specific tips so users build understanding over time, not just react to crises.</p>
       </div>
     </div>
     <div class="feature-card">
@@ -355,8 +337,8 @@
 <section class="hardware" id="prototype">
   <div class="section-eyebrow fade-up">Prototype</div>
   <div class="fade-up max-640">
-    <h2>Hardware that does the talking</h2>
-    <p>The M4 prototype demonstrated the core interaction loop using a Particle Photon 2 microcontroller. Plant state was simulated manually via the Particle app, allowing the team to trigger state changes in sync with live demo narration. A capacitive soil sensor was tested but dropped due to instability at the detection layer.</p>
+    <h2>Physical Prototype</h2>
+    <p>The high-fidelity prototype demonstrated the core interaction loop using a Particle Photon 2 microcontroller. Plant state was simulated manually via the Particle app, allowing the team to trigger state changes in sync with live demo narration. A capacitive soil sensor was tested but dropped since it could not reliably pick up moisture values, getting stuck at a single reading.</p>
   </div>
   <div class="states-row fade-up">
     <div class="state-card healthy">
@@ -367,12 +349,17 @@
     <div class="state-card thirsty">
       <div class="state-dot"></div>
       <div class="state-label">Thirsty</div>
-      <div class="state-desc">Amber LED · Thirsty face<br/>Attention needed soon</div>
+      <div class="state-desc">Blue LED · Thirsty face<br/>Attention needed soon</div>
     </div>
-    <div class="state-card critical">
+    <div class="state-card sad">
       <div class="state-dot"></div>
-      <div class="state-label">Critical</div>
-      <div class="state-desc">Red LED · Sad face<br/>Action required now</div>
+      <div class="state-label">Sad</div>
+      <div class="state-desc">Yellow LED · Sad face<br/>Needs attention</div>
+    </div>
+    <div class="state-card hot">
+      <div class="state-dot"></div>
+      <div class="state-label">Hot</div>
+      <div class="state-desc">Red LED · Worried face<br/>Action required now</div>
     </div>
   </div>
   <div class="hw-grid">
@@ -410,11 +397,11 @@
       <div class="proto-detail-stack">
         <div class="proto-detail-implemented">
           <div class="proto-detail-label-implemented">Implemented</div>
-          <p class="proto-detail-desc">NeoPixel LED ring with green → amber → red ambient gradient. TFT display rendering happy, neutral, and thirsty expressions. State transitions triggered through Particle Cloud logic.</p>
+          <p class="proto-detail-desc">NeoPixel LED ring with green, blue, and yellow ambient gradient, shifting to red when critically dry and in direct sunlight. TFT display rendering happy, neutral, and thirsty expressions. State transitions triggered through Particle Cloud logic.</p>
         </div>
         <div class="proto-detail-simulated">
           <div class="proto-detail-label-simulated">Simulated</div>
-          <p class="proto-detail-desc">Soil moisture sensor values (manually set). Time-based condition progression (warning → critical). Long-term plant history and app-based tracking. Full Particle Cloud ↔ mobile app integration.</p>
+          <p class="proto-detail-desc">Soil moisture sensor values (manually set). Time-based condition progression (warning → critical). Long-term plant history, real-time data sync between the physical device and the companion mobile app.</p>
         </div>
       </div>
     </div>
@@ -426,7 +413,7 @@
   <div class="section-eyebrow fade-up">Ideal System Proposal</div>
   <div class="fade-up max-680">
     <h2>A roadmap from prototype to product</h2>
-    <p>The M4 prototype demonstrates the core interaction experience but relies on manual simulation for sensor input. A fully realized Rootly system would close these gaps in two phases.</p>
+    <p>The high-fidelity prototype demonstrates the core interaction experience but relies on manual simulation for sensor input. A fully realized Rootly system would close these gaps in two phases.</p>
   </div>
   <div class="roadmap fade-up">
     <div class="roadmap-row">
@@ -436,12 +423,11 @@
       </div>
       <div class="roadmap-items">
         <span class="roadmap-chip">Reliable capacitive soil sensing</span>
-        <span class="roadmap-chip">Smoothed noisy readings</span>
         <span class="roadmap-chip">Light sensor integration</span>
         <span class="roadmap-chip">Persistent state storage</span>
         <span class="roadmap-chip">Multi-plant hub support</span>
-        <span class="roadmap-chip">Soft escalation path</span>
         <span class="roadmap-chip">Opt-in household coordination</span>
+        <span class="roadmap-chip">Motion sensor integration</span>
       </div>
     </div>
     <div class="roadmap-row roadmap-row-mt">
@@ -470,18 +456,18 @@
   <div class="reflection-grid fade-up">
     <div class="reflection-card">
       <h3>Limitations</h3>
-      <p>The soil sensor was dropped from the final build due to instability · the demo relies on manual state simulation. The companion app is a Figma prototype, not a functional application.</p>
-      <p>Study samples were modest throughout: 2 CI participants, 30 survey respondents, 4 user enactment participants. The cultural probe was designed but not deployed, leaving qualitative data thinner than intended.</p>
+      <p>The soil sensor was dropped from the final build due to instability, the demo relies on manual state simulation. The companion app is a Figma prototype, not a functional application.</p>
+      <p>Sample sizes were modest throughout the project: 2 contextual inquiry participants, 30 survey respondents, 3 cultural probe participants, and 4 user enactment participants. The cultural probe was deployed with 3 participants.</p>
     </div>
     <div class="reflection-card dark">
       <h3>Next Steps</h3>
       <p>Stabilizing the soil sensor and validating the full sensing-to-feedback loop on real hardware is the most critical next step. From there, building a lightweight backend to connect Particle Cloud to the mobile app enables the end-to-end notification path.</p>
-      <p>The household coordination feature deserves dedicated research · a user-initiated sharing feature was never tested. That's a design space worth a dedicated enactment round.</p>
+      <p>The household coordination feature deserves dedicated research, a user-initiated sharing feature was never tested. That's a design space worth a dedicated enactment round.</p>
     </div>
     <div class="reflection-card">
       <h3>New Insights from Prototyping</h3>
-      <p>Building the physical prototype surfaced something research alone didn't: the <strong>face display creates a qualitatively different experience</strong> than the LED ring alone. Demo observers smiled and commented on the face in a way the color ring never prompted.</p>
-      <p>Video production also clarified what the scenario is actually about. The emotional core isn't the technology · it's the <strong>moment of reconnection</strong> between a person and their plant after a busy day.</p>
+      <p>Building the physical prototype surfaced something research alone didn't: the <strong>face display creates a qualitatively different experience</strong> than the LED ring alone. During testing, the face display created a noticeably positive response than the LED ring alone.</p>
+      <p>The video script pushed us to think more carefully about what the experience actually feels like from a user's perspective.</p>
     </div>
   </div>
 </section>
@@ -491,14 +477,14 @@
   <div class="section-eyebrow fade-up">Accessibility</div>
   <div class="fade-up max-680">
     <h2>Who would encounter barriers · and how we fix them</h2>
-    <p>If the next project milestone focused on accessibility, two user groups would encounter significant barriers with the current Rootly design. Here's an honest assessment and a concrete path forward.</p>
+    <p>If the next project phase focused on accessibility, two user groups would encounter significant barriers with the current Rootly design. Here's an honest assessment and a concrete path forward.</p>
   </div>
   <div class="access-grid fade-up">
     <div>
       <h3 class="access-section-title">Current Barriers</h3>
       <div class="access-barrier">
         <h4>Color Vision Deficiency</h4>
-        <p class="access-detail">Users with red-green color blindness (deuteranopia / protanopia) · affecting ~8% of men · cannot reliably interpret the NeoPixel LED ring's green-to-red gradient, which is precisely the color axis most affected by common color blindness. These users receive no meaningful ambient signal from the device's most prominent feature.</p>
+        <p class="access-detail">Users with red-green color blindness (deuteranopia / protanopia), affecting ~8% of men, cannot reliably interpret the NeoPixel LED ring's green-to-red gradient, which is precisely the color axis most affected by common color blindness. These users receive no meaningful ambient signal from the device's most prominent feature.</p>
       </div>
       <div class="access-barrier">
         <h4>Visual Impairment &amp; Screen Readers</h4>
@@ -509,11 +495,11 @@
       <h3 class="access-section-title">Proposed Modifications</h3>
       <div class="access-fix">
         <h4>Shape &amp; Brightness-Based LED Cues</h4>
-        <p class="access-detail">Introduce pulsing patterns or brightness levels on the LED ring that communicate status independent of color · e.g., steady glow for healthy, slow pulse for warning, fast pulse for critical.</p>
+        <p class="access-detail">Introduce pulsing patterns or brightness levels on the LED ring that communicate status independent of color, e.g., steady glow for healthy, slow pulse for warning, fast pulse for critical.</p>
       </div>
       <div class="access-fix">
         <h4>Audio Feedback on Physical Device</h4>
-        <p class="access-detail">Add a gentle tone or spoken status when a user approaches or touches the device · triggered by the proximity sensor already proposed in the system architecture.</p>
+        <p class="access-detail">Add a gentle tone or spoken status when a user approaches or touches the device, triggered by the proximity sensor already proposed in the system architecture.</p>
       </div>
       <div class="access-fix">
         <h4>Screen Reader-Compatible Mobile App</h4>
@@ -532,22 +518,22 @@
   <div class="section-eyebrow fade-up">Appendix</div>
   <h2 class="fade-up">Milestone Reports</h2>
   <div class="milestone-links fade-up">
-    <a href="#" class="milestone-link">
+    <a href="https://drive.google.com/file/d/1VKYW3x0VaNrEEJtJyBYtPBh1ab05tPSb/view?usp=sharing" class="milestone-link" target="_blank" rel="noopener">
       <div class="ml-num">M1</div>
       <div class="ml-title">Concept Proposal</div>
       <div class="ml-desc">Contextual inquiry · Initial problem framing · Design goals</div>
     </a>
-    <a href="#" class="milestone-link">
+    <a href="https://drive.google.com/file/d/16p_AmRnwnM_xCkr7SruVvdoYIFN30kRW/view?usp=sharing" class="milestone-link" target="_blank" rel="noopener">
       <div class="ml-num">M2</div>
       <div class="ml-title">Formative Study</div>
       <div class="ml-desc">Cultural probe protocol · Survey analysis · Personas · Journey map</div>
     </a>
-    <a href="#" class="milestone-link">
+    <a href="https://drive.google.com/file/d/11pa1Me58Wghu8EM-SolOFqjDL-AkCgnS/view?usp=sharing" class="milestone-link" target="_blank" rel="noopener">
       <div class="ml-num">M3</div>
       <div class="ml-title">Experience Prototyping</div>
       <div class="ml-desc">Speed dating matrix · User enactments · System proposal</div>
     </a>
-    <a href="#" class="milestone-link">
+    <a href="https://drive.google.com/file/d/1IN7J5S__Z-dxNkySQkcMNa_HYoJlvUyL/view?usp=sharing" class="milestone-link" target="_blank" rel="noopener">
       <div class="ml-num">M4</div>
       <div class="ml-title">Final Demo</div>
       <div class="ml-desc">Particle Photon 2 build · Figma app prototype · Live demo</div>
@@ -556,68 +542,13 @@
 
   <h3 class="appendix-heading-architecture">High-Level Architecture</h3>
   <div class="arch-diagram fade-up">
-    <div class="arch-row">
-      <div class="arch-box">
-        <div class="arch-box-label">Physical Device</div>
-        <div class="arch-box-title">Particle Photon 2</div>
-        <div class="arch-box-items">
-          Capacitive Soil Sensor<br/>
-          NeoPixel LED Ring<br/>
-          TFT Face Display<br/>
-          WiFi Connectivity
-        </div>
-      </div>
-      <div class="arch-arrow">→</div>
-      <div class="arch-box">
-        <div class="arch-box-label">Cloud Layer</div>
-        <div class="arch-box-title">Particle Cloud</div>
-        <div class="arch-box-items">
-          Device Event Routing<br/>
-          Webhook / API Bridge<br/>
-          State Persistence<br/>
-          Push Trigger Logic
-        </div>
-      </div>
-      <div class="arch-arrow">→</div>
-      <div class="arch-box">
-        <div class="arch-box-label">Mobile App</div>
-        <div class="arch-box-title">Companion App</div>
-        <div class="arch-box-items">
-          Plant Profiles<br/>
-          Care History Logs<br/>
-          Care Guidance<br/>
-          Push Notifications
-        </div>
-      </div>
-    </div>
+    <img src="images/system_diagram.png" alt="Rootly high-level system architecture" class="arch-diagram-image">
   </div>
 
-  <h3 class="appendix-heading-code">Core State Machine (M4 Firmware)</h3>
-  <div class="code-block fade-up">
-<span class="code-comment">// Rootly Device Logic · Particle Photon 2</span>
-<span class="code-comment">// States driven by Particle Cloud variable (manual in M4 demo)</span>
-
-<span class="code-keyword">enum</span> PlantState { HEALTHY, THIRSTY, CRITICAL };
-
-<span class="code-keyword">void</span> updateState(PlantState state) {
-  <span class="code-keyword">switch</span>(state) {
-    <span class="code-keyword">case</span> HEALTHY:
-      NeoPixel.setColor(<span class="code-string">GREEN</span>);    <span class="code-comment">// Green ambient ring</span>
-      TFT.drawExpression(<span class="code-string">HAPPY_FACE</span>);
-      <span class="code-keyword">break</span>;
-    <span class="code-keyword">case</span> THIRSTY:
-      NeoPixel.setColor(<span class="code-string">AMBER</span>);     <span class="code-comment">// Amber · attention soon</span>
-      TFT.drawExpression(<span class="code-string">THIRSTY_FACE</span>);
-      <span class="code-keyword">break</span>;
-    <span class="code-keyword">case</span> CRITICAL:
-      NeoPixel.setColor(<span class="code-string">RED</span>);       <span class="code-comment">// Red · action required</span>
-      TFT.drawExpression(<span class="code-string">SAD_FACE</span>);
-      pushNotification(<span class="code-string">"Plant needs water now"</span>);
-      <span class="code-keyword">break</span>;
-  }
-}
-
-<span class="code-comment">// Full firmware: [link to team repository]</span>
+  <div class="code-link-card fade-up">
+    <div class="code-link-label">M4 Source Code</div>
+    <div class="code-link-desc">Particle Photon 2 firmware written in C++. Includes LED state logic, TFT display expressions, and Particle Cloud integration.</div>
+    <a href="https://github.com/Roshni-R19/rootly-firmware" target="_blank" class="code-link-btn">View on GitHub ↗</a>
   </div>
 </section>
 
